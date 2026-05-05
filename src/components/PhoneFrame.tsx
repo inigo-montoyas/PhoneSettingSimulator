@@ -1,12 +1,14 @@
+import type { Ref } from 'react';
 import type { OSConfig, VendorConfig } from '../types';
 import { SettingsScreen } from './SettingsScreen';
 
 interface Props {
   config: OSConfig;
-  vendor: VendorConfig; // reserved for future vendor-specific frame styling
+  vendor: VendorConfig;
+  screenRef?: Ref<HTMLDivElement>;
 }
 
-export function PhoneFrame({ config }: Props) {
+export function PhoneFrame({ config, screenRef }: Props) {
   const isIOS = config.theme.style === 'ios';
 
   return (
@@ -59,6 +61,7 @@ export function PhoneFrame({ config }: Props) {
 
         {/* Screen content */}
         <div
+          ref={screenRef}
           className="overflow-hidden"
           style={{
             height: 'calc(100% - 40px)',
