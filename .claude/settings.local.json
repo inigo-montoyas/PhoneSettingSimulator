@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "WebFetch(domain:developer.samsung.com)",
+      "WebFetch(domain:www.samsung.com)",
+      "WebFetch(domain:www.gsmarena.com)",
+      "WebFetch(domain:semiconductor.samsung.com)",
+      "WebFetch(domain:doc.samsungmobile.com)",
+      "WebFetch(domain:www.verizon.com)",
+      "WebFetch(domain:www.att.com)",
+      "WebFetch(domain:www.t-mobile.com)",
+      "WebFetch(domain:www.phonearena.com)",
+      "WebFetch(domain:androidcentral.com)",
+      "WebFetch(domain:www.androidauthority.com)",
+      "WebFetch(domain:9to5google.com)",
+      "WebFetch(domain:www.samsungmobilepress.com)",
+      "WebFetch(domain:news.samsung.com)",
+      "WebFetch(domain:www.xda-developers.com)",
+      "WebFetch(domain:www.sammobile.com)",
+      "WebFetch(domain:consumer.huawei.com)",
+      "WebFetch(domain:www.technipages.com)",
+      "WebFetch(domain:www.droidviews.com)",
+      "WebFetch(domain:www.tomsguide.com)",
+      "Bash(pkill -f \"vite --port 5173\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "WebFetch(domain:support.apple.com)",
+      "Bash(git *)"
+    ]
+  }
+}
